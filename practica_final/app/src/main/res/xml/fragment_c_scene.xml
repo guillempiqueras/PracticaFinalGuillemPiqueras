@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="5000"
+        motion:autoTransition="animateToEnd">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/estrrella1"
+               motion:framePosition="50"
+               android:rotation="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/estrrella1"
+               motion:framePosition="100"
+               android:rotation="360" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella1"
+               motion:framePosition="25"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="0.400"
+               motion:percentY="0.65" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella4"
+               motion:framePosition="25"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="0.4"
+               motion:percentY="0.656" />
+           <KeyAttribute
+               motion:motionTarget="@+id/estrrella4"
+               motion:framePosition="50"
+               android:rotation="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/estrrella4"
+               motion:framePosition="100"
+               android:rotation="360" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella1"
+               motion:framePosition="65"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="0.500"
+               motion:percentY="1.400" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella4"
+               motion:framePosition="65"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="0.500"
+               motion:percentY="1.400" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella2"
+               motion:framePosition="25"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="1"
+               motion:percentY="1.25" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella3"
+               motion:framePosition="25"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="1"
+               motion:percentY="1.25" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella2"
+               motion:framePosition="50"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="0.500"
+               motion:percentY="2.25" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella3"
+               motion:framePosition="50"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="0.5"
+               motion:percentY="2.25" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella2"
+               motion:framePosition="75"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="0"
+               motion:percentY="1.9" />
+           <KeyPosition
+               motion:motionTarget="@+id/estrrella3"
+               motion:framePosition="75"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="0"
+               motion:percentY="1.9" />
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_fragmentC"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/estrrella1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/estrrella4"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/estrrella2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible" />
+        <Constraint
+            android:id="@+id/estrrella3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/title_fragmentC"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="300dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/estrrella4"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/estrrella3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="30dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="300dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="300dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/estrrella1"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="30dp"
+            android:visibility="visible" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="0dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/estrrella2"
+            android:layout_marginStart="30dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="300dp" />
+    </ConstraintSet>
+</MotionScene>
